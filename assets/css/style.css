@@ -4,10 +4,7 @@ body{
     color: #666;
     background-color: #fff;
 }
-#hero-slider .item{
-    background-image:url(../images/slider/1.jpg);
- 
-}
+
 img{
     width:100%;
 }
@@ -25,16 +22,17 @@ img{
     position: relative;
 }
 .carousel-fade .carousel-inner .item{
+    background-image:url(../images/slider/1.jpg);
+
     opacity: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:2073px;
- 
-}
-.carousel-fade .carousel-inner .item.active{
     transition-property: opacity;
     background-repeat: no-repeat;
     background-size: cover;
+    height:2073px;
+
+}
+.carousel-fade .carousel-inner .item.active{
+    opacity: 1;
 }
 
 .bgProp{
@@ -166,10 +164,10 @@ img{
     padding-bottom: 30px;
   }
   
-  .navbar-right li.active a {
+  .navbar-right .nav-item.active a {
     background-color: rgba(0,0,0,.2);
   }
-  
+
   .navbar-brand h1 {
     margin-top: 5px;
   }
